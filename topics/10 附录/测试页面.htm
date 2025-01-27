@@ -1,0 +1,38 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html lang="zh-CN">
+<head><meta charset="UTF-8">
+<title>测试用页面</title>
+<link rel="stylesheet" href="../cascading_stylesheet.css">
+</head><body><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(3395);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../../index.htm?page=10 附录/测试页面.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div style="margin:20px; margin-top:5px">
+	<div style="margin-bottom:2px">
+		<h2 style="display: inline;">按钮位置调整</h2>
+		<input type="button" value="显示" style="margin-left: 2em;font-family: '微软雅黑'; font-size:12px;" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; &nbsp; &nbsp; &nbsp; &nbsp;this.innerText = ''; this.value = '隐藏'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = '显示'; }">
+	</div>
+	<div style="margin: 0px; padding: 6px; border: 1px inset;">
+		<div style="display:block;">
+			<p>实现了！</p></div></div></div></body></html>
